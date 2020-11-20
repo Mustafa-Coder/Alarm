@@ -1,0 +1,105 @@
+/* header */
+.header {
+    padding: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+    transition: .3s ease;
+    z-index: 1;
+}
+
+/* hover */
+.header:hover {
+    background-color: #e6e6e6;
+    margin-left: 0;
+    margin-right: 0;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.header .logo {
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    margin-left: 20px;
+}
+
+.header .logo::before {
+    content: '';
+    height: 2.5px;
+    width:25px;
+    position: absolute;
+    top: 15px;
+    left: -30px;
+    background-color: black;
+}
+
+.header .menubtn {
+    position: absolute;
+    top: 0;
+    margin-top: 15px;
+    font-size: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+/* end header */
+/* menu */
+.menushow {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    left:0;
+    bottom: 0;
+    background-color: white;
+    font-size: 25px;
+    transition: .4s;
+
+}
+
+/* hover */
+.menushow h1 {
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-top: 10%;
+    margin-bottom: 0;
+
+    
+}
+.menushow ul li {transition: .3s;}
+.menushow ul li:hover {
+    transition: .4s;
+    transform: translateX(5px);
+}
+
+.menushow ul {
+    text-align: center;
+    margin: 5% auto;
+    
+}
+
+.menushow ul li {
+    margin-bottom: 15px;
+}
+
+.menushow ul li a {
+    color: black;
+    opacity: .7;
+    text-decoration: none;
+
+}
+
+/* hover */
+.menushow ul li a:hover {
+    opacity: 1;
+}
+
+/* active menu */
+.activeMenu {
+    opacity: 1 !important;
+    z-index: 2;
+    transition: .4s;
+}
+
+/* end menu */
